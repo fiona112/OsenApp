@@ -1,0 +1,12 @@
+{
+  "name": "osen-app",
+  "displayName": "osen-app",
+  "expo": {
+    "name": "osen-app",
+    "slug": "osen-app",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
