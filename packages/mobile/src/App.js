@@ -9,9 +9,13 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import LoggedInUserContext from "~/contexts/LoggedInUser";
 import { NavigationContainer } from "@react-navigation/native";
 import RootNavigation from "~/navigation/RootNavigation";
+import Colors from "~/constants/Colors";
 
 const themes = {
   light: {
+    Header: {
+      backgroundColor: Colors.accent,
+    },
     Input: {
       inputContainerStyle: {
         backgroundColor: "#DDD",
@@ -44,7 +48,8 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      <ThemeProvider theme={themes.light}>
+      <StatusBar style="light" />
+      <ThemeProvider useDark={false} theme={themes.light}>
         <LoggedInUserContext.Provider value={{ authJwt, setAuthJwt }}>
           {!authJwt ? <LoginScreen /> : <RootNavigation />}
         </LoggedInUserContext.Provider>
