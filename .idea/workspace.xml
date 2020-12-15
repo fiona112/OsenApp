@@ -20,7 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22018a5b-c9a0-43ba-bbab-589346725463" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mobile/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mobile/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +97,7 @@
       <updated>1606485736927</updated>
       <workItem from="1606485742542" duration="3865000" />
       <workItem from="1607997220345" duration="66000" />
-      <workItem from="1607997497183" duration="16652000" />
+      <workItem from="1607997497183" duration="17333000" />
     </task>
     <task id="LOCAL-00001" summary="Babel root resolver">
       <created>1606487329724</created>
