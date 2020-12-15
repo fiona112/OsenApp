@@ -1,8 +1,9 @@
-import React, {useEffect, useState} from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { View, StyleSheet } from "react-native";
 import { Button, Input, Text } from "react-native-elements";
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import AsyncStorage from "@react-native-async-storage/async-storage";
 import validator from "email-validator";
+import LoggedInUserContext from "~/contexts/LoggedInUser";
 
 export default function LoginScreen() {
   const [inputData, setInputData] = useState({
@@ -13,12 +14,16 @@ export default function LoginScreen() {
   const [emailIsValid, setEmailIsValid] = useState(true);
   const [userHasAccount, setUserHasAccount] = useState(true);
 
+  const { authJwt, setAuthJwt } = useContext(LoggedInUserContext);
+
   const setInputDataValue = ({ key, value }) => {
     setInputData({ ...inputData, [key]: value });
   };
 
   useEffect(() => {
-  	setEmailIsValid(validator.validate(inputData.email) || inputData.email === "");
+    setEmailIsValid(
+      validator.validate(inputData.email) || inputData.email === ""
+    );
   }, [inputData]);
 
   return (
@@ -39,8 +44,8 @@ export default function LoginScreen() {
             placeholder="Email"
             value={inputData.email}
             onChangeText={(value) => setInputDataValue({ key: "email", value })}
-						errorStyle={{color: 'red'}}
-            errorMessage={!emailIsValid ? 'Invalid email' : null}
+            errorStyle={{ color: "red" }}
+            errorMessage={!emailIsValid ? "Invalid email" : null}
           />
         ) : null}
         <Input
@@ -59,7 +64,9 @@ export default function LoginScreen() {
             console.log("User tried to sign in");
             (async () => {
               try {
-                await AsyncStorage.setItem('session-jwt', 'TESTDATATESTDATATESTDATA');
+                const jwt = "TESTDATATESTDATATESTDATA";
+                await AsyncStorage.setItem("session-jwt", jwt);
+                setAuthJwt(jwt);
               } catch (e) {
                 console.log(e);
               }

@@ -45,13 +45,9 @@ export default function App() {
   return (
     <NavigationContainer>
       <ThemeProvider theme={themes.light}>
-        {!authJwt ? (
-          <LoginScreen />
-        ) : (
-          <LoggedInUserContext.Provider value={{ authJwt, setAuthJwt }}>
-            <RootNavigation />
-          </LoggedInUserContext.Provider>
-        )}
+        <LoggedInUserContext.Provider value={{ authJwt, setAuthJwt }}>
+          {!authJwt ? <LoginScreen /> : <RootNavigation />}
+        </LoggedInUserContext.Provider>
       </ThemeProvider>
     </NavigationContainer>
   );
