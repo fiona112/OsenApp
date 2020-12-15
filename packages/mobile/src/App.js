@@ -8,6 +8,7 @@ import { Input, ThemeProvider } from "react-native-elements";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import LoggedInUserContext from "~/contexts/LoggedInUser";
 import { NavigationContainer } from "@react-navigation/native";
+import RootNavigation from "~/navigation/RootNavigation";
 
 const themes = {
   light: {
@@ -48,8 +49,7 @@ export default function App() {
           <LoginScreen />
         ) : (
           <LoggedInUserContext.Provider value={{ authJwt, setAuthJwt }}>
-            {/*TODO: Create root navigator */}
-            <View></View>
+            <RootNavigation />
           </LoggedInUserContext.Provider>
         )}
       </ThemeProvider>
