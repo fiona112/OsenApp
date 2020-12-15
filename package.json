@@ -1,0 +1,7 @@
+{
+  "name": "Osen",
+  "repository": "git@github.com:JFSSICS4U/OsenApp.git",
+  "private": true,
+  "workspaces": ["packages/*"],
+  "license": "MIT"
+}
