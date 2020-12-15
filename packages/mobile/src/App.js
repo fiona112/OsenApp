@@ -1,3 +1,5 @@
+import "react-native-gesture-handler";
+
 import { StatusBar } from "expo-status-bar";
 import React, { useState, useEffect, useContext } from "react";
 import { StyleSheet, Text, View } from "react-native";
@@ -5,6 +7,7 @@ import LoginScreen from "~/screens/LoginScreen.js";
 import { Input, ThemeProvider } from "react-native-elements";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import LoggedInUserContext from "~/contexts/LoggedInUser";
+import { NavigationContainer } from "@react-navigation/native";
 
 const themes = {
   light: {
@@ -39,16 +42,18 @@ export default function App() {
   }, []);
 
   return (
-    <ThemeProvider theme={themes.light}>
-      {!authJwt ? (
-        <LoginScreen />
-      ) : (
-        <LoggedInUserContext.Provider value={{ authJwt, setAuthJwt }}>
-          {/*TODO: Create root navigator */}
-          <View></View>
-        </LoggedInUserContext.Provider>
-      )}
-    </ThemeProvider>
+    <NavigationContainer>
+      <ThemeProvider theme={themes.light}>
+        {!authJwt ? (
+          <LoginScreen />
+        ) : (
+          <LoggedInUserContext.Provider value={{ authJwt, setAuthJwt }}>
+            {/*TODO: Create root navigator */}
+            <View></View>
+          </LoggedInUserContext.Provider>
+        )}
+      </ThemeProvider>
+    </NavigationContainer>
   );
 }
 

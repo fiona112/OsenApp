@@ -15,5 +15,8 @@
   "scripts": {
     "start:mobile": "yarn workspace mobile start",
     "android:mobile": "yarn workspace mobile android"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
   }
 }
