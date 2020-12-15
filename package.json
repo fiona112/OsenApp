@@ -8,6 +8,8 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.13.2",
+    "email-validator": "^2.0.4",
     "expo": "~39.0.2",
     "expo-splash-screen": "~0.6.2",
     "expo-status-bar": "~1.0.2",
@@ -15,7 +17,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "~0.63.3",
-    "react-native-elements": "^3.0.0-alpha.1",
+    "react-native-elements": "~2.3.0",
     "react-native-gesture-handler": "~1.7.0",
     "react-native-reanimated": "~1.13.0",
     "react-native-screens": "~2.10.1",
@@ -28,6 +30,7 @@
     "babel-jest": "~25.2.6",
     "babel-plugin-module-resolver": "^4.0.0",
     "jest": "~25.2.6",
+    "prettier": "^2.2.1",
     "react-test-renderer": "~16.13.1"
   },
   "jest": {
