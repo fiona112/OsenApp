@@ -7,6 +7,7 @@ import Colors from "~/constants/Colors";
 const Tabs = createBottomTabNavigator();
 
 export default function TabsNavigation() {
+  // TODO: Dashboard, Challenges, Leaderboards, Profile (includes settings), Rewards
   return (
     <Tabs.Navigator
       tabBarOptions={{
