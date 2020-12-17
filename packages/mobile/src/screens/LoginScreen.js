@@ -3,7 +3,9 @@ import { View, StyleSheet } from "react-native";
 import { Button, Input, Text } from "react-native-elements";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import validator from "email-validator";
+import axios from "axios";
 import LoggedInUserContext from "~/contexts/LoggedInUser";
+import Config from "react-native-config";
 
 export default function LoginScreen() {
   const [inputData, setInputData] = useState({
@@ -13,8 +15,9 @@ export default function LoginScreen() {
   });
   const [emailIsValid, setEmailIsValid] = useState(true);
   const [userHasAccount, setUserHasAccount] = useState(true);
+  const [error, setError] = useState("");
 
-  const { authJwt, setAuthJwt } = useContext(LoggedInUserContext);
+  const { setAccessToken, setRefreshToken } = useContext(LoggedInUserContext);
 
   const setInputDataValue = ({ key, value }) => {
     setInputData({ ...inputData, [key]: value });
@@ -54,19 +57,52 @@ export default function LoginScreen() {
           onChangeText={(value) =>
             setInputDataValue({ key: "password", value })
           }
+          errorStyle={{ color: "red" }}
+          errorMessage={error}
           secureTextEntry
         />
         <Button
           containerStyle={{ width: "100%", marginBottom: 20 }}
-          title="Sign in"
+          title={userHasAccount ? "Sign in" : "Create account"}
           onPress={() => {
             // TODO: implement sign in on the backend
             console.log("User tried to sign in");
             (async () => {
               try {
-                const jwt = "TESTDATATESTDATATESTDATA";
-                await AsyncStorage.setItem("session-jwt", jwt);
-                setAuthJwt(jwt);
+                const login = async () => {
+                  const response = await axios.post(
+                    `${Config.API_URL}/auth/login`,
+                    {
+                      username: inputData.username,
+                      password: inputData.password,
+                    }
+                  );
+                  if (response.status !== 200) setError("Unknown error.");
+                  const { accessToken, refreshToken } = response.data.tokens;
+                  await AsyncStorage.setItem("accessToken", accessToken);
+                  await AsyncStorage.setItem("refreshToken", refreshToken);
+                  setAccessToken(accessToken);
+                  setRefreshToken(refreshToken);
+                };
+                if (!userHasAccount) {
+                  const response = await axios.post(
+                    `${Config.API_URL}/auth/register`,
+                    {
+                      username: inputData.username,
+                      email: inputData.email,
+                      password: inputData.password,
+                    }
+                  );
+                  if (response.status === 201) {
+                    await login();
+                  } else {
+                    setError(
+                      response.data.error || "Unknown error has occurred."
+                    );
+                  }
+                } else {
+                  await login();
+                }
               } catch (e) {
                 console.log(e);
               }

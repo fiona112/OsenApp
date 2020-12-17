@@ -33,13 +33,14 @@ const themes = {
 };
 
 export default function App() {
-  const [authJwt, setAuthJwt] = useState(false);
+  const [accessToken, setAccessToken] = useState("");
+  const [refreshToken, setRefreshToken] = useState("");
 
   useEffect(() => {
     (async () => {
       try {
-        const jwt = await AsyncStorage.getItem("session-jwt");
-        setAuthJwt(jwt);
+        setAccessToken(await AsyncStorage.getItem("accessToken"));
+        setRefreshToken(await AsyncStorage.getItem("refreshToken"));
       } catch (e) {
         console.log(e);
       }
@@ -50,8 +51,10 @@ export default function App() {
     <NavigationContainer>
       <StatusBar style="light" />
       <ThemeProvider useDark={false} theme={themes.light}>
-        <LoggedInUserContext.Provider value={{ authJwt, setAuthJwt }}>
-          {!authJwt ? <LoginScreen /> : <RootNavigation />}
+        <LoggedInUserContext.Provider
+          value={{ accessToken, setAccessToken, refreshToken, setRefreshToken }}
+        >
+          {!accessToken ? <LoginScreen /> : <RootNavigation />}
         </LoggedInUserContext.Provider>
       </ThemeProvider>
     </NavigationContainer>

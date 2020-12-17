@@ -20,9 +20,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22018a5b-c9a0-43ba-bbab-589346725463" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/packages/server/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/server/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/server/src/db/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/server/src/routes/auth/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/server/src/routes/auth/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/server/src/routes/auth/register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/server/src/utils/checkEmailAvailability.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/server/src/utils/checkUsernameAvailability.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/server/src/utils/generateRefreshToken.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mobile/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mobile/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mobile/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mobile/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mobile/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mobile/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mobile/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mobile/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mobile/src/contexts/LoggedInUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mobile/src/contexts/LoggedInUser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/mobile/src/screens/LoginScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/mobile/src/screens/LoginScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/packages/server/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/server/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/server/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/packages/server/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/packages/server/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/server/plugins/support.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/server/plugins/support.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/server/routes/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/server/src/routes/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/server/routes/example/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/server/routes/root.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/server/src/routes/root.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,10 +70,14 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="javascript.nodejs.core.library.configured.version" value="15.0.1" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.14.14" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/packages/server" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -63,27 +89,32 @@
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="settings.editor.selected.configurable" value="preferences.customizations" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages/server" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/packages/server/src" />
       <recent name="$PROJECT_DIR$/packages/mobile/src/Constants" />
       <recent name="$PROJECT_DIR$/packages/mobile/src/contexts" />
       <recent name="$PROJECT_DIR$/.idea" />
       <recent name="$PROJECT_DIR$/packages/app" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -99,7 +130,7 @@
       <updated>1606485736927</updated>
       <workItem from="1606485742542" duration="3865000" />
       <workItem from="1607997220345" duration="66000" />
-      <workItem from="1607997497183" duration="30631000" />
+      <workItem from="1607997497183" duration="64524000" />
     </task>
     <task id="LOCAL-00001" summary="Babel root resolver">
       <created>1606487329724</created>

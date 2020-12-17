@@ -1,8 +1,10 @@
-import React from 'react';
+import React from "react";
 
 const LoggedInUserContext = React.createContext({
-	authJwt: '',
-	setAuthJwt: () => {}
+  accessToken: "",
+  setAccessToken: () => {},
+  refreshToken: "",
+  setRefreshToken: () => {},
 });
 
 export default LoggedInUserContext;
