@@ -5,9 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Enters directory
-      run: cd packages/mobile
     - name: Install modules
       run: yarn
     - name: Run tests
-      run: yarn test
+      run: cd packages/mobile && yarn test
