@@ -1,14 +1,13 @@
 import "react-native";
 import React from "react";
-import App from "../src/App";
+import DashboardScreen from "../../src/screens/DashboardScreen";
 
-// Note: test renderer must be required after react-native.
 import renderer from "react-test-renderer";
 
 jest.useFakeTimers();
 
-describe("Root component", () => {
-  const tree = renderer.create(<App />);
+describe("Dashboard screen", () => {
+  const tree = renderer.create(<DashboardScreen />);
   it("matches snapshot", () => {
     expect(tree.toJSON()).toMatchSnapshot();
   });
