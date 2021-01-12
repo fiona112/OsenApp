@@ -1,0 +1,554 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dashboard screen matches snapshot 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#2089dc",
+        "borderBottomColor": "#f2f2f2",
+        "borderBottomWidth": 0.5,
+        "flexDirection": "row",
+        "height": 64,
+        "justifyContent": "space-between",
+        "paddingHorizontal": 10,
+        "paddingTop": 20,
+      }
+    }
+    testID="headerContainer"
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "flex-start",
+          "flex": 1,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 3,
+        }
+      }
+    >
+      <Text
+        numberOfLines={1}
+        style={
+          Object {
+            "color": "#fff",
+          }
+        }
+        text="DASHBOARD"
+      >
+        DASHBOARD
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "flex": 1,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "flexDirection": "row",
+        "padding": 20,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+        }
+      }
+    >
+      <View
+        elevation={4}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#ffffff",
+            "borderRadius": 20,
+            "flex": 1,
+            "justifyContent": "center",
+            "margin": 15,
+            "shadowColor": "#000000",
+            "shadowOffset": Object {
+              "height": 3,
+              "width": 0,
+            },
+            "shadowOpacity": 0.24,
+            "shadowRadius": 4,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "padding": 10,
+            }
+          }
+        >
+          <Text
+            h5={true}
+            style={
+              Object {
+                "color": "#242424",
+                "textAlign": "center",
+              }
+            }
+          >
+            WALKING CHALLENGE
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "minHeight": 100,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "position": "absolute",
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#242424",
+                }
+              }
+            >
+              76%
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "position": "absolute",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "height": 220,
+                  "padding": 0,
+                  "width": 220,
+                }
+              }
+            >
+              <RNSVGSvgView
+                bbHeight={220}
+                bbWidth={220}
+                focusable={false}
+                height={220}
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "transparent",
+                      "borderWidth": 0,
+                    },
+                    Object {
+                      "flex": 0,
+                      "height": 220,
+                      "width": 220,
+                    },
+                  ]
+                }
+                width={220}
+              >
+                <RNSVGGroup>
+                  <RNSVGDefs>
+                    <RNSVGLinearGradient
+                      gradient={
+                        Array [
+                          0,
+                          16777215,
+                          1,
+                          16777215,
+                        ]
+                      }
+                      gradientTransform={null}
+                      gradientUnits={1}
+                      name="backgroundGradient"
+                      x1={0}
+                      x2={220}
+                      y1={220}
+                      y2={0}
+                    />
+                    <RNSVGLinearGradient
+                      gradient={
+                        Array [
+                          0,
+                          437976978,
+                          1,
+                          1769362,
+                        ]
+                      }
+                      gradientTransform={null}
+                      gradientUnits={1}
+                      name="fillShadowGradient"
+                      x1={0}
+                      x2={0}
+                      y1={0}
+                      y2={220}
+                    />
+                  </RNSVGDefs>
+                  <RNSVGRect
+                    fill={
+                      Array [
+                        1,
+                        "backgroundGradient",
+                      ]
+                    }
+                    height={220}
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                    rx={0}
+                    ry={0}
+                    width="100%"
+                    x={0}
+                    y={0}
+                  />
+                  <RNSVGGroup
+                    matrix={
+                      Array [
+                        1,
+                        0,
+                        -0,
+                        1,
+                        110,
+                        110,
+                      ]
+                    }
+                  >
+                    <RNSVGGroup>
+                      <RNSVGPath
+                        d="M 0 -32 A 32 32 0 1 1 -0.201061 -31.999368 L -0.201061 -31.999368 A 32 32 0 1 0 0 -32 Z "
+                        propList={
+                          Array [
+                            "stroke",
+                            "strokeWidth",
+                          ]
+                        }
+                        stroke={857407378}
+                        strokeWidth={16}
+                      />
+                    </RNSVGGroup>
+                    <RNSVGGroup>
+                      <RNSVGPath
+                        d="M 0 -32 A 32 32 0 1 1 -30.433809 9.888544 L -30.433809 9.888544 A 32 32 0 1 0 0 -32 Z "
+                        propList={
+                          Array [
+                            "stroke",
+                            "strokeWidth",
+                            "strokeLinecap",
+                            "strokeLinejoin",
+                          ]
+                        }
+                        stroke={2149253010}
+                        strokeLinecap={1}
+                        strokeLinejoin={1}
+                        strokeWidth={16}
+                      />
+                    </RNSVGGroup>
+                  </RNSVGGroup>
+                </RNSVGGroup>
+              </RNSVGSvgView>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        elevation={4}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#ffffff",
+            "borderRadius": 20,
+            "flex": 1,
+            "justifyContent": "center",
+            "margin": 15,
+            "shadowColor": "#000000",
+            "shadowOffset": Object {
+              "height": 3,
+              "width": 0,
+            },
+            "shadowOpacity": 0.24,
+            "shadowRadius": 4,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "padding": 10,
+            }
+          }
+        >
+          <Text
+            h5={true}
+            style={
+              Object {
+                "color": "#242424",
+                "textAlign": "center",
+              }
+            }
+          >
+            WALKING CHALLENGE
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "minHeight": 100,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "position": "absolute",
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#242424",
+                }
+              }
+            >
+              76%
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "position": "absolute",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "height": 220,
+                  "padding": 0,
+                  "width": 220,
+                }
+              }
+            >
+              <RNSVGSvgView
+                bbHeight={220}
+                bbWidth={220}
+                focusable={false}
+                height={220}
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "transparent",
+                      "borderWidth": 0,
+                    },
+                    Object {
+                      "flex": 0,
+                      "height": 220,
+                      "width": 220,
+                    },
+                  ]
+                }
+                width={220}
+              >
+                <RNSVGGroup>
+                  <RNSVGDefs>
+                    <RNSVGLinearGradient
+                      gradient={
+                        Array [
+                          0,
+                          16777215,
+                          1,
+                          16777215,
+                        ]
+                      }
+                      gradientTransform={null}
+                      gradientUnits={1}
+                      name="backgroundGradient"
+                      x1={0}
+                      x2={220}
+                      y1={220}
+                      y2={0}
+                    />
+                    <RNSVGLinearGradient
+                      gradient={
+                        Array [
+                          0,
+                          437976978,
+                          1,
+                          1769362,
+                        ]
+                      }
+                      gradientTransform={null}
+                      gradientUnits={1}
+                      name="fillShadowGradient"
+                      x1={0}
+                      x2={0}
+                      y1={0}
+                      y2={220}
+                    />
+                  </RNSVGDefs>
+                  <RNSVGRect
+                    fill={
+                      Array [
+                        1,
+                        "backgroundGradient",
+                      ]
+                    }
+                    height={220}
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                    rx={0}
+                    ry={0}
+                    width="100%"
+                    x={0}
+                    y={0}
+                  />
+                  <RNSVGGroup
+                    matrix={
+                      Array [
+                        1,
+                        0,
+                        -0,
+                        1,
+                        110,
+                        110,
+                      ]
+                    }
+                  >
+                    <RNSVGGroup>
+                      <RNSVGPath
+                        d="M 0 -32 A 32 32 0 1 1 -0.201061 -31.999368 L -0.201061 -31.999368 A 32 32 0 1 0 0 -32 Z "
+                        propList={
+                          Array [
+                            "stroke",
+                            "strokeWidth",
+                          ]
+                        }
+                        stroke={857407378}
+                        strokeWidth={16}
+                      />
+                    </RNSVGGroup>
+                    <RNSVGGroup>
+                      <RNSVGPath
+                        d="M 0 -32 A 32 32 0 1 1 -30.433809 9.888544 L -30.433809 9.888544 A 32 32 0 1 0 0 -32 Z "
+                        propList={
+                          Array [
+                            "stroke",
+                            "strokeWidth",
+                            "strokeLinecap",
+                            "strokeLinejoin",
+                          ]
+                        }
+                        stroke={2149253010}
+                        strokeLinecap={1}
+                        strokeLinejoin={1}
+                        strokeWidth={16}
+                      />
+                    </RNSVGGroup>
+                  </RNSVGGroup>
+                </RNSVGGroup>
+              </RNSVGSvgView>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+        }
+      }
+    >
+      <View
+        elevation={4}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#ffffff",
+            "borderRadius": 20,
+            "flex": 1,
+            "justifyContent": "center",
+            "margin": 15,
+            "shadowColor": "#000000",
+            "shadowOffset": Object {
+              "height": 3,
+              "width": 0,
+            },
+            "shadowOpacity": 0.24,
+            "shadowRadius": 4,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "padding": 10,
+            }
+          }
+        >
+          <Text
+            h5={true}
+            style={
+              Object {
+                "color": "#242424",
+                "textAlign": "center",
+              }
+            }
+          >
+            LOCAL LEADERS
+          </Text>
+        </View>
+        <Text
+          style={
+            Object {
+              "color": "#242424",
+            }
+          }
+        >
+          1. John Doe
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
